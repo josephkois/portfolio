@@ -1,13 +1,10 @@
-import {useState, useEffect} from "react";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
+import { useState, useEffect } from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
+import navIcon1 from '../assets/img/navIcon1.svg';
+import navIcon2 from '../assets/img/navIcon2.svg';
 
 
 export const NavBar = () => {
-
     //managing which link the user is currently on
     const [activeLink, setActiveLink] = useState('home');  //initially set to home
     const [scrolled, setScrolled] = useState(false);  //detect when users scroll class
@@ -34,9 +31,8 @@ export const NavBar = () => {
     }
 
     return (
-        <Navbar  expand="lg" className={scrolled ? "scrolled": ""}>
+        <Navbar  expand="lg" className={scrolled ? "scrolled" : ""}>
             <Container>
-                <Navbar.Brand href="#home">Joseph Kois</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
@@ -56,5 +52,3 @@ export const NavBar = () => {
         </Navbar>
     );
 }
-
-export default NavBar;
