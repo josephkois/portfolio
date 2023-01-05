@@ -1,4 +1,5 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { ProjectCard } from "./ProjectCard";
 //import projImg1 from "../assets/img/project-img1.png";
 //import projImg2 from "../assets/img/project-img2.png";
 //import projImg3 from "../assets/img/project-img3.png";
@@ -44,17 +45,18 @@ export const Projects = () => {
                         {({ isVisible }) =>
                             <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                                 <h2>Projects</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p>Many projects have been completed using a multitude of tools, frameworks, and languages such as: <br></br> Java, C, C++, HTML/CSS, Javascript, Typescript, 
+                                React, NodeJS, ExpressJS, PostgreSQL, mySQL, Figma, Git, & Postman.</p>
                                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                         <Nav.Item>
-                                            <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                                            <Nav.Link eventKey="first">Back End</Nav.Link>
                                         </Nav.Item>
                                         <Nav.Item>
-                                            <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                                            <Nav.Link eventKey="second">Front End</Nav.Link>
                                         </Nav.Item>
                                         <Nav.Item>
-                                            <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                                            <Nav.Link eventKey="third">Games</Nav.Link>
                                         </Nav.Item>
                                     </Nav>
                                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>

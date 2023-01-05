@@ -32,7 +32,7 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Many projects have been completed using a multitude of tools, frameworks, and languages such as:<br></br> Java, C, C++, HTML/CSS, Javascript, Typescript, React, NodeJS, ExpressJS, PostgreSQL, mySQL, Figma, Git, & Postman.</p>
+                        <p>With a focus in backend development, my main coding language of choice is Java.<br></br> Experience with some tools and frameworks like: JetBrains IDE, Git, Postman, mySQL, and expressJS</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <h5>Java</h5>
