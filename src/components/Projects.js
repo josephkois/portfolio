@@ -1,40 +1,52 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-//import projImg1 from "../assets/img/project-img1.png";
-//import projImg2 from "../assets/img/project-img2.png";
-//import projImg3 from "../assets/img/project-img3.png";
-//import 'animate.css';
+import projImg1 from "../assets/img/project-img1.png";
+import projImg2 from "../assets/img/project-img2.png";
+import projImg3 from "../assets/img/project-img3.png";
+import projImg4 from "../assets/img/saw.gif";
+import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-    const projects = [
+    const projectsBackEnd= [
     {
         title: "Artemis",
         description: "Description of project",
-        //imgUrl: projImg1,
+        imgUrl: projImg1,
     },
     {
         title: "Linux File System",
-        description: "Description of project",
-        //imgUrl: projImg2,
+        description: "A linux file system implementation written in C, supports basic operations like ls, cd, ",
+        imgUrl: projImg2,
     },
     {
         title: "HTTP Web Server",
-        description: "Description of project",
-        //imgUrl: projImg3,
-    },
-    {
-        title: "Steel & Wine",
-        description: "Description of project",
-        //imgUrl: projImg1,
-    },
-    {
-        title: "SFSU HUB",
-        description: "Description of project",
-        //imgUrl: projImg2,
+        description: "A simple Java web server that will hand requests and responses.",
+        imgUrl: projImg3,
     },
     ];
+
+    const projectsFrontEnd = [
+        {
+            title: "Artemis",
+            description: "A miniamlist, modular, bug tracking and ticket managing application built with Typescript",
+            imgUrl: projImg1,
+        },
+        {
+            title: "SFSU HUB",
+            description: "Description of project",
+            imgUrl: projImg2,
+        },
+    ]
+
+    const projectsGames = [
+        {
+            title: "Steel & Wine",
+            description: "A competitive arena battler where opponents venture to an Arena to fight for glory in a Fantasy RPG setting",
+            imgUrl: projImg4,
+        },
+    ]
 
     return (
     <section className="project" id="project">
@@ -47,6 +59,7 @@ export const Projects = () => {
                                 <h2>Projects</h2>
                                 <p>Many projects have been completed using a multitude of tools, frameworks, and languages such as: <br></br> Java, C, C++, HTML/CSS, Javascript, Typescript, 
                                 React, NodeJS, ExpressJS, PostgreSQL, mySQL, Figma, Git, & Postman.</p>
+                                <p><a href="https://github.com/josephkois">github.com/josephkois</a> for a more detailed look</p>
                                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                         <Nav.Item>
@@ -63,7 +76,7 @@ export const Projects = () => {
                                         <Tab.Pane eventKey="first">
                                             <Row>
                                                 {
-                                                    projects.map((project, index) => {
+                                                    projectsBackEnd.map((project, index) => {
                                                         return (
                                                             <ProjectCard
                                                                 key={index}
@@ -74,11 +87,33 @@ export const Projects = () => {
                                                 }
                                             </Row>
                                         </Tab.Pane>
-                                    <Tab.Pane eventKey="section">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                                    <Tab.Pane eventKey="second">
+                                    <Row>
+                                                {
+                                                    projectsFrontEnd.map((project, index) => {
+                                                        return (
+                                                            <ProjectCard
+                                                                key={index}
+                                                                {...project}
+                                                                />
+                                                        )
+                                                    })
+                                                }
+                                            </Row>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="third">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                                    <Row>
+                                                {
+                                                    projectsGames.map((project, index) => {
+                                                        return (
+                                                            <ProjectCard
+                                                                key={index}
+                                                                {...project}
+                                                                />
+                                                        )
+                                                    })
+                                                }
+                                            </Row>
                                     </Tab.Pane>
                                 </Tab.Content>
                             </Tab.Container>

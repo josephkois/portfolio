@@ -59,7 +59,7 @@ return (
                 <h1>{"Hi I'm Joe! "} <br /><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Back end Developer", "CS Graduate", "Proud Veteran" ]'><span className="wrap">{text}</span></span></h1>
                     <p>Determined and ambitious Jr. software developer with a focus in back-end development. A former team leader whose demonstrated work ethic and attention to detail was crucial in being awarded multiple honors 
                     from the United States Military. A personable team player and problem solver who collaborates with others to drive success.</p>
-                    <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                    <button onClick={() => window.open("https://www.linkedin.com/in/josephkois/")}>Let’s Connect <ArrowRightCircle size={25} /></button>
                 </div>}
             </TrackVisibility>
             </Col>

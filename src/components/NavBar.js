@@ -42,10 +42,10 @@ export const NavBar = () => {
                         </Nav>
                         <span className="navbar-text">
                             <div className="social-icon">
-                                <a href="#"><img src={navIcon1} alt="" /></a>
-                                <a href="#"><img src={navIcon2} alt="" /></a>
+                                <a href="https://github.com/josephkois"><img src={navIcon1} alt="" /></a>
+                                <a href="https://www.linkedin.com/in/josephkois/"><img src={navIcon2} alt="" /></a>
                             </div>
-                            <button className='vvd' onClick={() => console.log('connect')}><span>Let's connect</span></button>
+                            <button className='vvd' onClick={() => window.open("https://www.linkedin.com/in/josephkois/")}><span>Let's connect</span></button>
                         </span>
                     </Navbar.Collapse>
             </Container>
