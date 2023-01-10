@@ -1,7 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import sfsuhub from "../assets/img/sfsuhub.png";
-import HTTPserver from "../assets/img/HTTPserver.png";
+import HTTPserver from "../assets/img/httpserver.png";
 import saw from "../assets/img/saw.gif";
 import artemis from "../assets/img/Artemis.png";
 import filesystem from "../assets/img/filesystem.png";
