@@ -4,6 +4,7 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/saw.gif";
+import artemis from "../assets/img/artemis.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -13,7 +14,7 @@ export const Projects = () => {
     {
         title: "Artemis",
         description: "Description of project",
-        imgUrl: projImg1,
+        imgUrl: artemis,
     },
     {
         title: "Linux File System",
