@@ -1,6 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
+import sfsuhub from "../assets/img/sfsuhub.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/saw.gif";
@@ -35,9 +35,9 @@ export const Projects = () => {
             imgUrl: artemis,
         },
         {
-            title: "SFSU HUB",
-            description: "Description of project",
-            imgUrl: projImg2,
+            title: "Gator Companion",
+            description: "Gator Companion helps students find housing, events, and used textbooks at SFSU",
+            imgUrl: sfsuhub,
         },
     ]
 
