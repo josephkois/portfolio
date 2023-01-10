@@ -1,10 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import sfsuhub from "../assets/img/sfsuhub.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import projImg4 from "../assets/img/saw.gif";
+import HTTPserver from "../assets/img/HTTPserver.png";
+import saw from "../assets/img/saw.gif";
 import artemis from "../assets/img/Artemis.png";
+import filesystem from "../assets/img/filesystem.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -19,12 +19,12 @@ export const Projects = () => {
     {
         title: "Linux File System",
         description: "A linux file system implementation written in C, supports basic operations like ls, cd, ",
-        imgUrl: projImg2,
+        imgUrl: filesystem,
     },
     {
         title: "HTTP Web Server",
         description: "A simple Java web server that will hand requests and responses.",
-        imgUrl: projImg3,
+        imgUrl: HTTPserver,
     },
     ];
 
@@ -45,7 +45,7 @@ export const Projects = () => {
         {
             title: "Steel & Wine",
             description: "A competitive arena battler where opponents venture to an Arena to fight for glory in a Fantasy RPG setting",
-            imgUrl: projImg4,
+            imgUrl: saw,
         },
     ]
 
